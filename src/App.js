@@ -8,9 +8,7 @@ import AddArticle from "./pages/AddArticle/AddArticle"
 import EditArticle from "./pages/EditArticle/EditArticle"
 import './App.css';
 
-const App = () => {
-
-  
+function App() {
   return (
     <div className='container'>
       <Switch>
@@ -24,5 +22,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
