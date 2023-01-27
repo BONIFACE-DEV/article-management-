@@ -1,155 +1,297 @@
-
 {
-    "blogList": [
-      {
-        "id": 1,
-        "title": "7 CSS tools you should be using",
-        "category": "development",
-        "subCategory": "['frontend', 'ui/ux', 'design']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/Synthwave-Postmodern.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Milan Places That Highlight The City",
-        "category": "travel",
-        "subCategory": "['vacation', 'holidays', 'sight seeing']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/f67396fc3cfce63a28e07ebb35d974ac.jpg"
-      },
-      {
-        "id": 3,
-        "title": "Online Shopping – An Alternative to Shopping in the Mall",
-        "category": "shopping",
-        "subCategory": "['e-commerce store', 'clothing', 'shopping store']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/fQwuyKJ9qxjSbr6REcgtmW-1200-80.jpg"
-      },
-      {
-        "id": 4,
-        "title": "ADVENTURE IN YOU",
-        "category": "adventure",
-        "subCategory": "['adrenaline', 'stay-fit', 'lifestyle']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/graphic-design-trends.png"
-      },
-      {
-        "id": 5,
-        "title": "Loaded BBQ Baked Potatoes",
-        "category": "cooking",
-        "subCategory": "['bbq', 'food', 'lifestyle']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/make-it-personal.jpg"
-      },
-      {
-        "id": 6,
-        "title": "Beyond the Beach",
-        "category": "travel",
-        "subCategory": "['beaches', 'sea', 'holidays']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/Purple-Combination-colors-graphic-design-predictions-1024x576-1024x576.jpg"
-      },
-      {
-        "id": 7,
-        "title": "Art & Perception",
-        "category": "art",
-        "subCategory": "['skill', 'design', 'passion']",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "authorName": "John Doe",
-        "authorAvatar": "/assets/images/author.jpg",
-        "createdAt": "June 03, 2021",
-        "cover": "./assets/images/Synthwave-Postmodern.jpg"
-      },
-      {
-        "title": "ckk",
-        "category": "ckk",
-        "subCategory": "ckk",
-        "description": "ckk",
-        "authorName": "ckk",
-        "authorAvatar": "C:\\fakepath\\icon.jpg",
-        "createdAt": "2023-01-27",
-        "cover": "C:\\fakepath\\background.jpg",
-        "id": 13
-      }
-    ],
-    "register": [
-      {
-        "username": "ckk",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "ckk@gmail.com",
-        "id": 1
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 2
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 3
-      },
-      {
-        "username": "fiti",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "fiti@gmail.com",
-        "id": 4
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 5
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 6
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 7
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 8
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 9
-      },
-      {
-        "username": "kim@gmail.com",
-        "password": "gHW@Uw43n!cbkqq",
-        "email": "",
-        "id": 10
-      }
-    ]
-  }
+  "blogList": [
+    {
+      "id": 1,
+      "title": "7 CSS tools you should be using",
+      "category": "development",
+      "subCategory": "['frontend', 'ui/ux', 'design']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/Synthwave-Postmodern.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Milan Places That Highlight The City",
+      "category": "travel",
+      "subCategory": "['vacation', 'holidays', 'sight seeing']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/f67396fc3cfce63a28e07ebb35d974ac.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Online Shopping – An Alternative to Shopping in the Mall",
+      "category": "shopping",
+      "subCategory": "['e-commerce store', 'clothing', 'shopping store']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/fQwuyKJ9qxjSbr6REcgtmW-1200-80.jpg"
+    },
+    {
+      "id": 4,
+      "title": "ADVENTURE IN YOU",
+      "category": "adventure",
+      "subCategory": "['adrenaline', 'stay-fit', 'lifestyle']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/graphic-design-trends.png"
+    },
+    {
+      "id": 5,
+      "title": "Loaded BBQ Baked Potatoes",
+      "category": "cooking",
+      "subCategory": "['bbq', 'food', 'lifestyle']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/make-it-personal.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Beyond the Beach",
+      "category": "travel",
+      "subCategory": "['beaches', 'sea', 'holidays']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/Purple-Combination-colors-graphic-design-predictions-1024x576-1024x576.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Art & Perception",
+      "category": "art",
+      "subCategory": "['skill', 'design', 'passion']",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "authorName": "John Doe",
+      "authorAvatar": "/assets/images/author.jpg",
+      "createdAt": "June 03, 2021",
+      "cover": "./assets/images/Synthwave-Postmodern.jpg"
+    },
+    {
+      "title": "ertyuiop[]",
+      "category": "ertyuiop[",
+      "subCategory": "ertyuiop[",
+      "description": "sdfghjkl;",
+      "authorName": "werty7u8i9op[",
+      "authorAvatar": "https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "createdAt": "",
+      "cover": "https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 8
+    },
+    {
+      "title": "Boniface in the hood",
+      "category": "food",
+      "subCategory": "leisure",
+      "description": "money",
+      "authorName": "Kiprop",
+      "authorAvatar": "https://images.unsplash.com/photo-1556978491-f855b6604e70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVycnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "createdAt": "2023-01-14",
+      "cover": "https://images.unsplash.com/photo-1623886534927-83b5e5adef57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlcnJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 9
+    }
+  ],
+  "register": [
+    {
+      "username": "ckk",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "ckk@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 2
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 3
+    },
+    {
+      "username": "fiti",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "fiti@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 5
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 6
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 7
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 8
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 9
+    },
+    {
+      "username": "kim@gmail.com",
+      "password": "gHW@Uw43n!cbkqq",
+      "email": "",
+      "id": 10
+    },
+    {
+      "username": "Boniface",
+      "password": "084639033",
+      "email": "korirboniface17@gmail.com",
+      "id": 11
+    },
+    {
+      "username": "boniface",
+      "password": "678456",
+      "email": "korirboniface17@gmail.com",
+      "id": 12
+    },
+    {
+      "username": "Boniface",
+      "password": "76890-",
+      "email": "korirboniface17@gmail.com",
+      "id": 13
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 14
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 15
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 16
+    },
+    {
+      "username": "boniface",
+      "password": "345678",
+      "email": "korirboniface17@gmail.com",
+      "id": 17
+    },
+    {
+      "username": "boniface",
+      "password": "2345",
+      "email": "korirboniface17@gmail.com",
+      "id": 18
+    },
+    {
+      "username": "boniface",
+      "password": "567890",
+      "email": "korirboniface17@gmail.com",
+      "id": 19
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 20
+    },
+    {
+      "username": "boniface",
+      "password": "67890",
+      "email": "korirboniface17@gmail.com",
+      "id": 21
+    },
+    {
+      "username": "boniface",
+      "password": "4567878",
+      "email": "korirboniface17@gmail.com",
+      "id": 22
+    },
+    {
+      "username": "boniface",
+      "password": "234567890",
+      "email": "korirboniface17@gmail.com",
+      "id": 23
+    },
+    {
+      "username": "boniface",
+      "password": "76890-",
+      "email": "korirboniface17@gmail.com",
+      "id": 24
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 25
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 26
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 27
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 28
+    },
+    {
+      "username": "ubnt",
+      "password": "67890",
+      "email": "korirboniface17@gmail.com",
+      "id": 29
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 30
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 31
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 32
+    }
+  ]
+}

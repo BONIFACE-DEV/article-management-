@@ -52,11 +52,11 @@ function AddArticle (){
                 <label>Author's Name</label>
                     <input className="input" type="text" name= "authorName" placeholder="Enter author's name..." value={authorName} onChange={e => setAuthorName(e.target.value)}/>
                 <label>Author's Avatar</label>
-                    <input className="input" type="file" name= "authorAvatar" placeholder="Enter author's Avator..." value={authorAvatar} onChange={e => setAuthorAvatar(e.target.value)}/>
+                    <input className="input" type="text" name= "authorAvatar" placeholder="Enter author's  url Avator..." value={authorAvatar} onChange={e => setAuthorAvatar(e.target.value)}/>
                 <label>Created At</label>
                     <input className="registinputerInput" accept="image/png, image/jpeg" type="date" name= "createdAt" placeholder="Enter the date Created..." value={createdAt} onChange={e => setCreatedAt(e.target.value)} />
                 <label>Cover</label>
-                    <input className="input" type="file" accept="image/png, image/jpeg" name= "cover" placeholder="Enter the cover..." value={cover} onChange={e => setCover(e.target.value)} />
+                    <input className="input" type="text" accept="image/png, image/jpeg" name= "cover" placeholder="Enter the url cover..." value={cover} onChange={e => setCover(e.target.value)} />
                 <button className="addButton" type="submit">Register</button>
             </form>
         </div>

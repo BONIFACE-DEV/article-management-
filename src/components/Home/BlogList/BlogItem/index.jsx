@@ -1,27 +1,63 @@
-import React, {useState, useEffect} from 'react';
-import BlogItem from './BlogItem';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Chip from '../../../common/Chip';
 import './styles.css';
-const BlogList = () => {
-  const [blogg, setBlog] = useState([])
-  useEffect(() => {
-    fetch("http://localhost:3000/blogList")
-    .then((response) => response.json())
-    .then((data) => setBlog(data))
-  },[])
-  const blogLoop = blogg.map((blog) => {
-    return(
-      <BlogItem blog={blog} blogg={blogg} setBlog={setBlog} />
-    )
-  })
-  // const blogLoop = blog.map((item) => {
-  //   return(
-  //     <BlogItem key={item.id} id={item.id} title={item.title} category={item.category} subCategory={item.subCategory} description={item.description} authorName={item.authorName} authorAvatar={item.authorAvatar} createdAt={item.createdAt} cover={item.cover} item={item} />
-  //   )
-  // })
+import {Button} from "semantic-ui-react"
+
+const BlogItem = ({
+  blog: {
+  description,
+  title,
+  createdAt,
+  authorName,
+  authorAvatar,
+  cover,
+  category,
+  id,
+  },blogg, setBlog
+}) => {
+
+  function handleDelete(){
+
+    const url = `http://localhost:3000/blogList/${id}`
+
+    const answer = window.confirm('Are you sure you want to delete this article ?')
+    if(answer === true){
+        fetch(url,{
+            method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(() => {
+            const newBlogs  = blogg.filter(item=>item.id !== id)
+            setBlog(newBlogs);
+        })
+    } 
+    console.log(answer)
+  }
+
+
+
   return (
-    <div className='blogList-wrap'>
-      {blogLoop}
+    <div className='blogItem-wrap'>
+      <img className='blogItem-cover' src={cover} alt='cover' />
+      <Chip label={category} />
+      <h3>{title}</h3>
+      <p className='blogItem-desc'>{description}</p>
+      <footer>
+        <div className='blogItem-author'>
+          <img src={authorAvatar} alt='avatar' />
+          <div>
+            <h6>{authorName}</h6>
+            <p>{createdAt}</p>
+          </div>
+        </div>
+        <Link className='blogItem-link' to={`/blog/${id}`} >
+          ➝
+      </Link>
+      <Button negative onClick={handleDelete}>Delete</Button>
+      </footer>
     </div>
   );
 };
-export default BlogList;
+
+export default BlogItem;

@@ -88,7 +88,7 @@ function EditArticle(){
                 value={data.cover}
                 onChange={(e) => setData({ ...data, cover: e.target.value })}
             />
-            <button onSubmit={handlePatch}>Edit</button>
+            <button onClick={handlePatch}>Edit</button>
         </div>
     )
 }
