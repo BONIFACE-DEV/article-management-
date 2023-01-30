@@ -12,7 +12,7 @@ function Login() {
             <input className="loginInput" type="password" placeholder="Enter your password..." />
         <button className="loginButton">Login</button>
       </form>
-      <Link to="/" className="btn btn-primary">Register</Link>
+      <Link to="/home" className="btn btn-primary">Register</Link>
     </div>
   );
 }

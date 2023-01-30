@@ -17,7 +17,7 @@ const Blog = () => {
   }, []);
   return (
     <>
-      <Link className='blog-goBack' to='/'>
+      <Link className='blog-goBack' to='/home'>
         <span> &#8592;</span> <span>Go Back</span>
       </Link>
       {blog ? (
@@ -35,7 +35,7 @@ const Blog = () => {
           </header>
           <img src={blog.cover} alt='cover' />
           <p className='blog-desc'>{blog.description}</p>
-          <Link to="/EditArticle" className="btn btn-success">Edit Article</Link>
+          {/* <Link to="/EditArticle" className="btn btn-success">Edit Article</Link> */}
         </div>
       ) : (
         <EmptyList />
