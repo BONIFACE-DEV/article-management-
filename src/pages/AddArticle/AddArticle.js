@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import "./styles.css";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 function AddArticle (){
     const [title, setTitle] = useState("");
     const [category, setCategory] = useState("");
@@ -12,6 +12,18 @@ function AddArticle (){
     const [createdAt, setCreatedAt] = useState("");
     const [cover, setCover] = useState("");
     const [message, setMessage] = useState(null);
+
+    const [blog, setBlog] =useState([]);
+    const navigate =useNavigate()
+
+    const [date, setDate] = useState(new Date().toISOString().substring(0, 10));    
+
+    useEffect(() =>{
+        fetch('http://localhost:3000/blogList')
+            .then((res) => res.json())
+            .then((data) => setBlog(data))
+    }, [])
+    
     // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const handleSubmit = async e => {
         e.preventDefault();
@@ -26,7 +38,9 @@ function AddArticle (){
             createdAt,
             cover
           });
-        //   setIsLoggedIn(true);
+        setBlog(response)
+        navigate('/home')
+
         } catch (err) {
           console.error(err);
         }
@@ -52,12 +66,12 @@ function AddArticle (){
                 <label>Author's Name</label>
                     <input className="input" type="text" name= "authorName" placeholder="Enter author's name..." value={authorName} onChange={e => setAuthorName(e.target.value)}/>
                 <label>Author's Avatar</label>
-                    <input className="input" type="text" name= "authorAvatar" placeholder="Enter author's  url Avator..." value={authorAvatar} onChange={e => setAuthorAvatar(e.target.value)}/>
+                    <input className="input" type="text" accept="image/png, image/jpeg"name= "authorAvatar" placeholder="Enter author's Avator..." value={authorAvatar} onChange={e => setAuthorAvatar(e.target.value)}/>
                 <label>Created At</label>
-                    <input className="registinputerInput" accept="image/png, image/jpeg" type="date" name= "createdAt" placeholder="Enter the date Created..." value={createdAt} onChange={e => setCreatedAt(e.target.value)} />
+                    <input className="registinputerInput" type="text" name= "createdAt" placeholder="Enter the date Created..." value={date} readOnly/>
                 <label>Cover</label>
-                    <input className="input" type="text" accept="image/png, image/jpeg" name= "cover" placeholder="Enter the url cover..." value={cover} onChange={e => setCover(e.target.value)} />
-                <button className="addButton" type="submit">Register</button>
+                    <input className="input" type="text" accept="image/png, image/jpeg" name= "cover" placeholder="Enter the cover..." value={cover} onChange={e => setCover(e.target.value)} />
+                <button className="addButton" type="submit">Add Article</button>
             </form>
         </div>
     )

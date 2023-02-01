@@ -1,27 +1,37 @@
+
 import React from 'react';
-import { Switch, Route} from 'react-router-dom';
-import Register from './pages/Register/Register';
-import Home from './pages/Home/index';
-import Login from "./pages/Login/Login";
-import Blog from './pages/Blog/index';
-import AddArticle from "./pages/AddArticle/AddArticle"
-import EditArticle from "./pages/EditArticle/EditArticle"
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Registration from './pages/Registration/Registration';
+import Login from './pages/Login/Login';
+import Home from './pages/Home';
+import AddArticle from './pages/AddArticle/AddArticle';
+import Blog from './pages/Blog/index'
+import ViewArticle from './pages/ViewArticle';
+import EditArticle from './pages/EditArticle/EditArticle';
+import HomeTwo from './pages/HomeTwo'
+import EmptyList from './components/common/EmptyList';
+import EditBlog from './pages/EditArticle/EditBlog';
+import Logout from './pages/Logout/Logout'
+
 
 function App() {
   return (
-    <div className='container'>
-      <Switch>
-        <Route path="/" exact component={Register} />
-        <Route path="/home" exact component={Home} />
-        <Route path='/blog/:id' component={Blog} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/addArticle" exact component={AddArticle} />
-        <Route path="/EditArticle" exact component={EditArticle} />
-    </Switch>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/register" element={<Registration/>} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/addArticle" element={<AddArticle/>}/>
+        <Route path='/blog/:id' element={<Blog/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/" element={<HomeTwo/>}/>
+        <Route path="/emptyList" element={<EmptyList/>}/>
+        <Route exact path="/edit/:id" element={<EditBlog/>}/>
+        <Route path="editArticle" exact component={<EditArticle/>}/>
+        <Route path="/viewArticle" element={<ViewArticle/>}/>
+        <Route path='logout' element={<Logout/>}/>
+      </Routes>
+    </BrowserRouter>
   );
-};
-
+}
 
 export default App;

@@ -1,41 +1,52 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { blogList } from '../../config/data';
 import Chip from '../../components/common/Chip';
-import EmptyList from '../../components/common/EmptyList';
+import EmptyList from '../../components/common/EmptyList/index';
 import './styles.css';
 import { Link } from 'react-router-dom';
-import {Button} from "semantic-ui-react"
+
 const Blog = () => {
   const { id } = useParams();
-  const [blog, setBlog] = useState(null);
+  const [blog, setBlog] = useState([]);
+  
+
+  // useEffect(() => {
+  //   if(Array.isArray(blogList)){
+  //     let blog = blogList.find((blog) => blog.id === parseInt(id));
+  //     if (blog) {
+  //       setBlog(blog);
+  //     }
+  //   }
+  // }, []);
+  
+
   useEffect(() => {
-    let blog = blogList.find((blog) => blog.id === parseInt(id));
-    if (blog) {
-      setBlog(blog);
-    }
+    fetch('http://localhost:3000/blogList')
+      .then(response => response.json())
+      .then(jsonData => setBlog(jsonData));
   }, []);
+
+  const blogs = blog.find(object => object.id === parseInt(id));
+
   return (
     <>
-      <Link className='blog-goBack' to='/home'>
+      <Link className='blog-goBack' to='/'>
         <span> &#8592;</span> <span>Go Back</span>
       </Link>
-      {blog ? (
+      {blogs ? (
         <div className='blog-wrap'>
           <header>
-            <p className='blog-date'>Published {blog.createdAt}</p>
-            <h1>{blog.title}</h1>
-            <div className='blog-subCategory'>
-              {blog.subCategory.map((category, i) => (
-                <div key={i}>
-                  <Chip label={category} />
-                </div>
-              ))}
-            </div>
+            <p className='blog-date'>Published {blogs.createdAt}</p>
+            <h1>{blogs.title}</h1>
+            <div className='blog-subCategory' style={{color: 'blue', fontSize: '1.5rem'}} >
+              <div>
+                    <Chip label={blogs.subCategory} />
+                  </div>
+              </div>
           </header>
-          <img src={blog.cover} alt='cover' />
-          <p className='blog-desc'>{blog.description}</p>
-          {/* <Link to="/EditArticle" className="btn btn-success">Edit Article</Link> */}
+          <img src={blogs.cover} alt='cover' />
+          <p className='blog-desc'>{blogs.description}</p>
+          <Link to={`/edit/${id}`} id="addButtons" style={{fontSize:'2rem', marginBottom: '50px'}}>Edit Article </Link>
         </div>
       ) : (
         <EmptyList />
@@ -43,4 +54,5 @@ const Blog = () => {
     </>
   );
 };
+
 export default Blog;

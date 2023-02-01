@@ -2,11 +2,13 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Login from '../Login/Login';
 import "./styles.css"
-import { Button } from 'semantic-ui-react';
+// import { Button } from 'semantic-ui-react';
 function Logout() {
   return (
     <div>
-        <Link to="/Login" className="btn btn-primary" >Logout</Link>
+        <button className="addButton" type="submit">
+            <Link to="/login">Logout</Link>
+        </button>
     </div>
   )
 }

@@ -1,20 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Chip from '../../../common/Chip/index';
+import Chip from '../../../components/common/data';
 import './styles.css';
+import {Button} from "semantic-ui-react"
+import { Link } from 'react-router-dom';
 
-const BlogItem = ({
+const ArticleTwo = ({
   blog: {
+    id,
+    title ,
+    category,
+    subCategory,
     description,
-    title,
-    createdAt,
     authorName,
     authorAvatar,
-    cover,
-    category,
-    id,
+    createdAt,
+    cover
+    
+    
   },
-}) => {
+  blogg, setBlog}) => {
+
   return (
     <div className='blogItem-wrap'>
       <img className='blogItem-cover' src={cover} alt='cover' />
@@ -29,12 +34,12 @@ const BlogItem = ({
             <p>{createdAt}</p>
           </div>
         </div>
-        <Link className='blogItem-link' to={`/blog/${id}`} style={{color: 'blue'}}>
-          Click to View More
-        </Link>
+      <Link className='blogItem-link' to={`/blog/${id}`} >
+          ➝
+      </Link>
       </footer>
     </div>
   );
 };
 
-export default BlogItem;
+export default ArticleTwo;

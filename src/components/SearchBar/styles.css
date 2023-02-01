@@ -1,4 +1,13 @@
-.blogItem-wrap {
+.searchBar-wrap button {
+    outline: none;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    background-color: #0f52ba;
+    color: #fff;
+  }
+
+  .blogItem-wrap {
     display: flex;
     flex-direction: column;
   }
@@ -60,3 +69,6 @@
     color: #a9a9a9;
     font-weight: 600;
   }
+  
+
+  

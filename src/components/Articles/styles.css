@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   
   @media (max-width: 768px) {
@@ -15,3 +18,4 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  
